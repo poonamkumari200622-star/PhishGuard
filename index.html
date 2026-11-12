@@ -4,817 +4,559 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>PhishGuard — Intelligent Phishing Protection</title>
-
-    <meta name="description" content="Analyze suspicious URLs, understand phishing risks and make safer decisions online with PhishGuard.">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./style.css">
+    <meta name="description" content="PhishGuard helps users identify suspicious URLs and understand common online scams.">
+    <title>PhishGuard | Intelligent Phishing Protection</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- NAVIGATION -->
-    <header class="navbar">
+<!-- NAVBAR -->
+<header class="navbar">
+    <a href="#home" class="logo">
+        <span class="logo-icon">🛡</span>
+        PhishGuard
+    </a>
 
-        <a href="#home" class="logo">
-            <span class="logo-icon">P</span>
-            PhishGuard<span class="logo-dot">.</span>
-        </a>
+    <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
 
-        <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#problem">The Problem</a>
-            <a href="#how-it-works">How It Works</a>
-            <a href="#features">Features</a>
-            <a href="#scam-alerts">Fraud Awareness</a>
-        </nav>
+    <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#problem">The Problem</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#awareness">Fraud Awareness</a>
+    </nav>
 
-        <a href="#scanner" class="nav-button">
-            Scan a URL <span>↗</span>
-        </a>
-
-        <button class="menu-button" type="button" aria-label="Toggle navigation">
-            ☰
-        </button>
-
-    </header>
+    <a href="#scanner" class="nav-button">Scan a URL ↗</a>
+</header>
 
 
-    <!-- HERO SECTION -->
-    <main>
+<!-- HERO -->
+<section class="section hero" id="home">
 
-    <section class="hero" id="home">
+    <div class="hero-content">
+        <span class="eyebrow">
+            <span class="green-dot"></span>
+            INTELLIGENT PHISHING PROTECTION
+        </span>
 
-        <div class="hero-content">
-
-            <span class="eyebrow">
-                <span class="live-dot"></span>
-                INTELLIGENT PHISHING PROTECTION
-            </span>
-
-            <h1>
-                Before you click,
-                <span>know what</span>
-                you're clicking.
-            </h1>
-
-            <p class="hero-description">
-                Not every link is what it seems. Analyze suspicious website
-                URLs, identify potential phishing indicators and make safer
-                decisions before you click.
-            </p>
-
-            <div class="hero-actions">
-
-                <a href="#scanner" class="primary-button">
-                    Try URL Scanner <span>↗</span>
-                </a>
-
-                <a href="#how-it-works" class="text-button">
-                    Discover how it works <span>→</span>
-                </a>
-
-            </div>
-
-            <div class="hero-trust">
-                <span>✓ Easy URL analysis</span>
-                <span>✓ Suspicious link awareness</span>
-                <span>✓ Safer browsing decisions</span>
-            </div>
-
-        </div>
-
-
-        <!-- 3D HERO PREVIEW -->
-        <div class="hero-visual">
-
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-
-            <div class="preview-card">
-
-                <div class="preview-top">
-
-                    <div class="preview-brand">
-                        <span class="mini-logo">P</span>
-                        PhishGuard
-                    </div>
-
-                    <span class="preview-status">SECURITY PREVIEW</span>
-
-                </div>
-
-                <div class="preview-title">
-
-                    <span class="small-label">LINK SECURITY</span>
-
-                    <h3>
-                        Check before
-                        you trust.
-                    </h3>
-
-                </div>
-
-                <div class="url-field">
-
-                    <span>↗</span>
-
-                    <div>
-                        <small>WEBSITE ADDRESS</small>
-                        <p>https://example.com</p>
-                    </div>
-
-                    <span class="field-check">✓</span>
-
-                </div>
-
-                <div class="preview-divider"></div>
-
-                <div class="preview-result">
-
-                    <div class="result-icon">✓</div>
-
-                    <div>
-                        <small>PHISHGUARD</small>
-                        <strong>Stay aware. Stay protected.</strong>
-                    </div>
-
-                    <span class="result-arrow">↗</span>
-
-                </div>
-
-                <div class="preview-footer">
-                    <span>SMARTER DIGITAL SAFETY</span>
-                    <span>01 / 03</span>
-                </div>
-
-            </div>
-
-            <div class="floating-label label-top">
-                <span class="label-dot green-dot"></span>
-                Link awareness
-            </div>
-
-            <div class="floating-label label-bottom">
-                <span class="label-dot orange-dot"></span>
-                Think before you click
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- INTRO STRIP -->
-    <section class="intro-strip">
-
-        <div class="intro-left">
-            The internet is full of links.
-            <span>Not all are safe.</span>
-        </div>
+        <h1>
+            Smarter protection<br>
+            for a <span>safer digital</span> future.
+        </h1>
 
         <p>
-            A single misleading link can expose personal information.
-            Awareness is your first layer of protection.
+            Not every link is what it seems. Analyze suspicious website URLs,
+            identify potential phishing indicators and make safer decisions
+            before you click.
         </p>
 
-    </section>
-
-
-    <!-- PROBLEM SECTION -->
-    <section class="problem-section section-padding" id="problem">
-
-        <div class="section-heading">
-
-            <span class="eyebrow">THE PROBLEM</span>
-
-            <h2>
-                A familiar-looking link
-                can hide <span>a real threat.</span>
-            </h2>
-
-            <p>
-                Phishing attempts often imitate trusted websites and
-                use urgency, rewards or fear to influence people.
-            </p>
-
+        <div class="hero-actions">
+            <a href="#scanner" class="primary-button">Try URL Scanner ↗</a>
+            <a href="#how-it-works" class="text-button">Discover how it works →</a>
         </div>
 
-
-        <div class="problem-grid">
-
-            <article class="problem-card">
-
-                <span class="card-index">01 / IMPERSONATION</span>
-
-                <div class="problem-icon">◈</div>
-
-                <h3>Fake websites</h3>
-
-                <p>
-                    Fraudsters create websites that look similar to
-                    banks, shopping platforms and trusted services.
-                </p>
-
-            </article>
-
-
-            <article class="problem-card">
-
-                <span class="card-index">02 / URGENCY</span>
-
-                <div class="problem-icon">⌛</div>
-
-                <h3>Urgent messages</h3>
-
-                <p>
-                    Messages may threaten account suspension or
-                    promise rewards to make people act quickly.
-                </p>
-
-            </article>
-
-
-            <article class="problem-card">
-
-                <span class="card-index">03 / MISLEADING LINKS</span>
-
-                <div class="problem-icon">↗</div>
-
-                <h3>Suspicious URLs</h3>
-
-                <p>
-                    Slight changes in spelling, unusual domains
-                    and misleading website addresses can be warning signs.
-                </p>
-
-                <div class="fake-url">
-                    Example: <strong>paytm-secure.example</strong>
-                </div>
-
-            </article>
-
+        <div class="hero-points">
+            <span>✓ Easy URL analysis</span>
+            <span>✓ Risk indicators</span>
+            <span>✓ Fraud awareness</span>
         </div>
+    </div>
 
-    </section>
+    <div class="hero-visual">
+        <div class="visual-glow"></div>
 
+        <div class="visual-card">
+            <div class="visual-top">
+                <span class="visual-dot"></span>
+                PHISHGUARD SECURITY
+                <span class="live-label">● ACTIVE</span>
+            </div>
 
-    <!-- HOW IT WORKS -->
-    <section class="how-section section-padding" id="how-it-works">
+            <div class="shield-icon">🛡️</div>
 
-        <div class="section-heading centered-heading">
+            <h3>Stay One Step Ahead</h3>
+            <p>Smarter decisions begin with safer clicks.</p>
 
-            <span class="eyebrow">HOW IT WORKS</span>
+            <div class="visual-status">
+                <span>Security monitoring</span>
+                <strong>ENABLED</strong>
+            </div>
 
-            <h2>
-                Three steps towards
-                <span>safer browsing.</span>
-            </h2>
+            <div class="visual-line"><span></span></div>
 
-            <p>
-                PhishGuard makes it easier to understand suspicious
-                website links before interacting with them.
-            </p>
-
+            <div class="visual-bottom">
+                <span>URL ANALYSIS</span>
+                <span>PHISHING AWARENESS</span>
+            </div>
         </div>
+    </div>
+</section>
 
 
-        <div class="steps-grid">
-
-            <article class="step-card">
-
-                <span class="step-number">01</span>
-
-                <div class="step-icon">↗</div>
-
-                <h3>Enter a URL</h3>
-
-                <p>
-                    Copy and paste the suspicious website address
-                    into the PhishGuard scanner.
-                </p>
-
-                <span class="step-caption">SUBMIT A LINK</span>
-
-            </article>
-
-
-            <article class="step-card">
-
-                <span class="step-number">02</span>
-
-                <div class="step-icon">⌕</div>
-
-                <h3>Analyze the link</h3>
-
-                <p>
-                    The detection system checks URL patterns and
-                    suspicious indicators.
-                </p>
-
-                <span class="step-caption">CHECK URL SIGNALS</span>
-
-            </article>
-
-
-            <article class="step-card">
-
-                <span class="step-number">03</span>
-
-                <div class="step-icon">✓</div>
-
-                <h3>Understand the result</h3>
-
-                <p>
-                    Review the analysis result and make a more
-                    informed decision before visiting the website.
-                </p>
-
-                <span class="step-caption">MAKE SAFER DECISIONS</span>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- FEATURES -->
-    <section class="features-section section-padding" id="features">
-        <div class="scanner-visual">
-    <img src="phishguard-detector.png" alt="PhishGuard URL Detector">
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+    <span>🛡 Safer Browsing</span>
+    <span>🔍 URL Inspection</span>
+    <span>⚡ Quick Analysis</span>
+    <span>🔐 Digital Awareness</span>
 </div>
 
-        <div class="features-layout">
 
-            <div class="features-intro">
+<!-- PROBLEM -->
+<section class="section problem-section" id="problem">
 
-                <span class="eyebrow">WHAT WE LOOK FOR</span>
+    <div class="section-heading centered">
+        <span class="eyebrow">THE DIGITAL THREAT</span>
+        <h2>One careless click can change everything.</h2>
+        <p>
+            Online fraud often begins with a message, a misleading link
+            or a request that creates unnecessary urgency.
+        </p>
+    </div>
 
-                <h2>
-                    Small details.
-                    <span>Important signals.</span>
-                </h2>
+    <div class="problem-grid">
 
-                <p>
-                    A suspicious URL can contain several warning signs.
-                    PhishGuard is designed to examine useful URL
-                    characteristics during analysis.
-                </p>
-
-                <a href="#scanner" class="text-button">
-                    Analyze a URL <span>→</span>
-                </a>
-
-            </div>
-
-
-            <div class="features-list">
-
-                <article class="feature-row">
-
-                    <div class="feature-icon">01</div>
-
-                    <div>
-                        <h3>URL Structure</h3>
-                        <p>
-                            Examine unusual URL formats, long addresses
-                            and suspicious domain patterns.
-                        </p>
-                    </div>
-
-                    <span class="feature-arrow">↗</span>
-
-                </article>
-
-
-                <article class="feature-row">
-
-                    <div class="feature-icon">02</div>
-
-                    <div>
-                        <h3>HTTPS Inspection</h3>
-                        <p>
-                            Check whether a website uses HTTPS.
-                            Remember, HTTPS alone does not guarantee safety.
-                        </p>
-                    </div>
-
-                    <span class="feature-arrow">↗</span>
-
-                </article>
-
-
-                <article class="feature-row">
-
-                    <div class="feature-icon">03</div>
-
-                    <div>
-                        <h3>Suspicious Keywords</h3>
-                        <p>
-                            Look for potentially misleading words such as
-                            login, verify, update and claim.
-                        </p>
-                    </div>
-
-                    <span class="feature-arrow">↗</span>
-
-                </article>
-
-
-                <article class="feature-row">
-
-                    <div class="feature-icon">04</div>
-
-                    <div>
-                        <h3>IP Address Patterns</h3>
-                        <p>
-                            Identify URLs that use IP addresses instead
-                            of conventional domain names.
-                        </p>
-                    </div>
-
-                    <span class="feature-arrow">↗</span>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- FRAUD AWARENESS: 3D CARD DECK -->
-    <section class="scam-awareness section-padding" id="scam-alerts">
-
-        <div class="scam-heading">
-
-            <span class="eyebrow">STAY ALERT · STAY SAFE</span>
-
-            <h2>
-                Some messages
-                look real. <span>Think twice.</span>
-            </h2>
-
+        <article class="problem-card">
+            <span class="problem-number">01 / THREAT</span>
+            <div class="problem-icon">📩</div>
+            <h3>Fake Messages</h3>
             <p>
-                Explore common fraud messages. Click the front card
-                to reveal the next scam and learn its warning signs.
+                Scammers send messages pretending to be banks, delivery
+                services or trusted organisations.
             </p>
+        </article>
 
-        </div>
+        <article class="problem-card">
+            <span class="problem-number">02 / THREAT</span>
+            <div class="problem-icon">🔗</div>
+            <h3>Suspicious Links</h3>
+            <p>
+                Fraudulent websites may imitate genuine websites to
+                collect personal or financial information.
+            </p>
+        </article>
 
+        <article class="problem-card">
+            <span class="problem-number">03 / THREAT</span>
+            <div class="problem-icon">⚠️</div>
+            <h3>Urgent Requests</h3>
+            <p>
+                Fake warnings and reward claims pressure people into
+                making unsafe decisions quickly.
+            </p>
+        </article>
 
-        <div class="fraud-showcase">
-
-            <div class="fraud-deck" id="fraudDeck">
-
-                <!-- FRAUD MESSAGE 1 -->
-                <button class="fraud-card active" type="button">
-
-                    <div class="fraud-card-top">
-                        <span class="fraud-brand">PHISHGUARD / 01</span>
-                        <span class="fraud-category">BANKING FRAUD</span>
-                    </div>
-
-                    <div class="fraud-card-content">
-
-                        <span class="message-label">SAMPLE SMS MESSAGE</span>
-
-                        <h3>Your bank account will be blocked today!</h3>
-
-                        <p>
-                            Complete your KYC immediately using the
-                            link below to avoid account suspension.
-                        </p>
-
-                        <div class="fake-link">
-                            <span>↗</span> bank-kyc-update.example
-                        </div>
-
-                    </div>
-
-                    <div class="fraud-card-bottom">
-                        <span class="fraud-warning">⚠ Fake KYC alert</span>
-                        <span class="click-hint">CLICK TO NEXT ↗</span>
-                    </div>
-
-                </button>
+    </div>
+</section>
 
 
-                <!-- FRAUD MESSAGE 2 -->
-                <button class="fraud-card" type="button">
+<!-- HOW IT WORKS -->
+<section class="section how-section" id="how-it-works">
 
-                    <div class="fraud-card-top">
-                        <span class="fraud-brand">PHISHGUARD / 02</span>
-                        <span class="fraud-category">UPI FRAUD</span>
-                    </div>
+    <div class="section-heading centered">
+        <span class="eyebrow">HOW IT WORKS</span>
+        <h2>Security in three simple steps.</h2>
+        <p>
+            PhishGuard examines a submitted URL and presents
+            risk indicators in an understandable format.
+        </p>
+    </div>
 
-                    <div class="fraud-card-content">
+    <div class="steps-grid">
 
-                        <span class="message-label">SAMPLE MESSAGE</span>
+        <article class="step-card">
+            <span class="step-number">STEP 01</span>
+            <div class="step-icon">🔗</div>
+            <h3>Enter a URL</h3>
+            <p>
+                Copy and paste the suspicious website address
+                into the PhishGuard scanner.
+            </p>
+        </article>
 
-                        <h3>Congratulations! You won ₹5,000 cashback.</h3>
+        <article class="step-card">
+            <span class="step-number">STEP 02</span>
+            <div class="step-icon">🔍</div>
+            <h3>Analyze Indicators</h3>
+            <p>
+                The scanner checks URL characteristics such as
+                suspicious words, insecure protocols and unusual patterns.
+            </p>
+        </article>
 
-                        <p>
-                            Scan this QR code and enter your UPI PIN
-                            to receive your cashback instantly.
-                        </p>
+        <article class="step-card">
+            <span class="step-number">STEP 03</span>
+            <div class="step-icon">🛡️</div>
+            <h3>View the Result</h3>
+            <p>
+                See a risk score, classification and indicators
+                that can help you make a safer decision.
+            </p>
+        </article>
 
-                        <div class="fake-link">
-                            <span>↗</span> claim-your-reward.example
-                        </div>
-
-                    </div>
-
-                    <div class="fraud-card-bottom">
-                        <span class="fraud-warning">⚠ Fake cashback offer</span>
-                        <span class="click-hint">CLICK TO NEXT ↗</span>
-                    </div>
-
-                </button>
-
-
-                <!-- FRAUD MESSAGE 3 -->
-                <button class="fraud-card" type="button">
-
-                    <div class="fraud-card-top">
-                        <span class="fraud-brand">PHISHGUARD / 03</span>
-                        <span class="fraud-category">DELIVERY FRAUD</span>
-                    </div>
-
-                    <div class="fraud-card-content">
-
-                        <span class="message-label">SAMPLE SMS MESSAGE</span>
-
-                        <h3>Your parcel delivery is on hold!</h3>
-
-                        <p>
-                            Pay a small ₹25 delivery fee through this
-                            link to receive your package.
-                        </p>
-
-                        <div class="fake-link">
-                            <span>↗</span> courier-payment.example
-                        </div>
-
-                    </div>
-
-                    <div class="fraud-card-bottom">
-                        <span class="fraud-warning">⚠ Fake delivery fee</span>
-                        <span class="click-hint">CLICK TO NEXT ↗</span>
-                    </div>
-
-                </button>
+    </div>
+</section>
 
 
-                <!-- FRAUD MESSAGE 4 -->
-                <button class="fraud-card" type="button">
+<!-- FEATURES -->
+<section class="section features-section" id="features">
 
-                    <div class="fraud-card-top">
-                        <span class="fraud-brand">PHISHGUARD / 04</span>
-                        <span class="fraud-category">JOB FRAUD</span>
-                    </div>
+    <div class="section-heading centered">
+        <span class="eyebrow">OUR CAPABILITIES</span>
+        <h2>Designed to make digital safety simpler.</h2>
+        <p>
+            Useful features that help users understand potential
+            phishing threats.
+        </p>
+    </div>
 
-                    <div class="fraud-card-content">
+    <div class="features-grid">
 
-                        <span class="message-label">SAMPLE WHATSAPP MESSAGE</span>
+        <article class="feature-card">
+            <span>FEATURE 01</span>
+            <h3>🔍 URL Risk Analysis</h3>
+            <p>
+                Examine website addresses for suspicious characteristics
+                and potentially unsafe patterns.
+            </p>
+        </article>
 
-                        <h3>Earn ₹5,000 daily from home!</h3>
+        <article class="feature-card">
+            <span>FEATURE 02</span>
+            <h3>📊 Risk Percentage</h3>
+            <p>
+                Display a numerical risk score to make the analysis
+                easier to understand.
+            </p>
+        </article>
 
-                        <p>
-                            You are selected for a part-time job.
-                            Pay a registration fee to start earning.
-                        </p>
+        <article class="feature-card">
+            <span>⚡ FEATURE 03</span>
+            <h3>🚨 Risk Classification</h3>
+            <p>
+                Categorise submitted URLs into low, suspicious
+                or high-risk groups.
+            </p>
+        </article>
 
-                        <div class="fake-link">
-                            <span>↗</span> instant-job-offer.example
-                        </div>
+        <article class="feature-card">
+            <span>FEATURE 04</span>
+            <h3>📚 Fraud Awareness</h3>
+            <p>
+                Learn about common scam messages and recognise
+                warning signs before responding.
+            </p>
+        </article>
 
-                    </div>
-
-                    <div class="fraud-card-bottom">
-                        <span class="fraud-warning">⚠ Fake job offer</span>
-                        <span class="click-hint">CLICK TO NEXT ↗</span>
-                    </div>
-
-                </button>
-
-            </div>
+    </div>
+</section>
 
 
-            <div class="fraud-deck-info">
+<!-- FRAUD AWARENESS -->
+<section class="section awareness-section" id="awareness">
 
-                <div>
-                    <span class="deck-counter" id="deckCounter">01 / 04</span>
-                    <span class="deck-caption">EXPLORE FRAUD EXAMPLES</span>
+    <div class="section-heading centered">
+        <span class="eyebrow">STAY ALERT • STAY PROTECTED</span>
+        <h2>Recognise fraud before it happens.</h2>
+        <p>
+            Explore common scam messages and understand how
+            fraudsters try to trick people.
+        </p>
+    </div>
+
+    <div class="fraud-area">
+
+        <div class="fraud-deck" id="fraudDeck">
+
+            <article class="fraud-card active">
+                <div class="message-top">
+                    <span>SMS ALERT</span>
+                    <span class="message-tag">⚠ SUSPICIOUS</span>
                 </div>
 
-                <button type="button" class="next-fraud" id="nextFraud">
-                    Next message <span>→</span>
-                </button>
+                <div class="sender">UNKNOWN SENDER</div>
 
-            </div>
+                <p>
+                    Your bank account will be blocked today!
+                    Verify your KYC immediately using this link:
+                    <strong>fake-bank-verify.example</strong>
+                </p>
+
+                <div class="message-warning">
+                    ⚠ Warning: Do not open unexpected banking links.
+                    Visit your bank's official website instead.
+                </div>
+            </article>
+
+
+            <article class="fraud-card">
+                <div class="message-top">
+                    <span>UPI FRAUD</span>
+                    <span class="message-tag">⚠ SUSPICIOUS</span>
+                </div>
+
+                <div class="sender">UNKNOWN CALLER</div>
+
+                <p>
+                    You have received ₹5,000! Enter your UPI PIN
+                    to receive the money immediately.
+                </p>
+
+                <div class="message-warning">
+                    ⚠ Warning: Never enter your UPI PIN to receive money.
+                </div>
+            </article>
+
+
+            <article class="fraud-card">
+                <div class="message-top">
+                    <span>REWARD SCAM</span>
+                    <span class="message-tag">⚠ SUSPICIOUS</span>
+                </div>
+
+                <div class="sender">FAKE REWARD TEAM</div>
+
+                <p>
+                    Congratulations! You won a special prize.
+                    Pay a small processing fee to claim your reward.
+                </p>
+
+                <div class="message-warning">
+                    ⚠ Warning: Unexpected prizes demanding payment
+                    may be fraudulent.
+                </div>
+            </article>
+
+
+            <article class="fraud-card">
+                <div class="message-top">
+                    <span>DELIVERY SCAM</span>
+                    <span class="message-tag">⚠ SUSPICIOUS</span>
+                </div>
+
+                <div class="sender">FAKE DELIVERY SERVICE</div>
+
+                <p>
+                    Your parcel is on hold. Update your delivery
+                    address immediately through this suspicious link.
+                </p>
+
+                <div class="message-warning">
+                    ⚠ Warning: Check delivery updates through
+                    the official delivery app or website.
+                </div>
+            </article>
 
         </div>
 
 
-        <div class="fraud-tip">
+        <div class="fraud-controls">
+            <span id="deckCounter">01 / 04</span>
 
-            <span class="tip-icon">!</span>
-
-            <p>
-                <strong>Stay protected:</strong>
-                Never share your OTP, UPI PIN or password.
-                Verify unexpected messages through official channels.
-            </p>
-
+            <button type="button" id="nextFraud">
+                Next Message →
+            </button>
         </div>
 
-        <p class="sample-disclaimer">
-            All messages and website addresses shown are fictional
-            examples created for educational awareness.
+        <p class="fiction-note">
+            These are fictional examples created for cybersecurity awareness.
         </p>
 
-    </section>
+    </div>
+</section>
 
 
-    <!-- URL SCANNER -->
-    <section class="scanner-section section-padding" id="scanner">
+<!-- URL SCANNER -->
+<section class="section scanner-section" id="scanner">
 
-        <div class="scanner-layout">
+    <div class="section-heading centered">
+        <span class="eyebrow">PHISHGUARD URL DETECTOR</span>
+        <h2>Think before you click.</h2>
+        <p>
+            Enter a website URL to check for suspicious characteristics
+            and view its estimated risk score.
+        </p>
+    </div>
 
-            <div class="scanner-intro">
 
-                <span class="eyebrow">PHISHGUARD URL SCANNER</span>
+    <div class="scanner-shell">
 
-                <h2>
-                    One link.
-                    <span>One closer look.</span>
-                </h2>
-
-                <p>
-                    Have a suspicious link? Enter it below to examine
-                    its characteristics and understand potential risks.
-                </p>
-
-                <div class="scanner-points">
-                    <span>✓ Analyze suspicious URL patterns</span>
-                    <span>✓ Identify potential warning signs</span>
-                    <span>✓ Understand the analysis result</span>
-                </div>
-
+        <div class="scanner-top">
+            <div>
+                <span class="scanner-small">INTELLIGENT URL INSPECTION</span>
+                <h3>Scan a suspicious link</h3>
+                <p>Analyze a URL before interacting with it.</p>
             </div>
 
+            <div class="scanner-shield">🛡️</div>
+        </div>
 
-            <div class="scanner-box">
 
-                <div class="scanner-box-top">
+        <form id="scanForm">
 
-                    <div>
-                        <span class="eyebrow">LINK ANALYSIS</span>
-                        <h3>Check a website</h3>
-                    </div>
+            <label for="urlInput">Enter website URL</label>
 
-                    <div class="scanner-lock">⌕</div>
+            <div class="input-group">
+                <span>🔗</span>
 
+                <input
+                    type="text"
+                    id="urlInput"
+                    placeholder="https://example.com"
+                    autocomplete="url"
+                    required
+                >
+
+                <button type="submit" id="scanBtn">
+                    Analyze URL ↗
+                </button>
+            </div>
+
+        </form>
+
+        <p class="scanner-hint">
+            <span>●</span> Demo heuristic analysis · No website is opened
+        </p>
+
+
+        <!-- SCAN RESULT -->
+        <div class="result-container" id="resultContainer" hidden>
+
+            <div class="result-header">
+                <h3>Scan Result</h3>
+                <span class="risk-badge" id="riskBadge">LOW RISK</span>
+            </div>
+
+            <div class="risk-overview">
+                <div class="risk-number">
+                    <span id="riskPercent">0</span><span>%</span>
                 </div>
 
-                <p class="scanner-help">
-                    Paste the website URL you want to examine.
-                    Do not enter passwords or personal information.
-                </p>
-
-
-                <form id="scanForm">
-
-                    <label for="urlInput">Website URL</label>
-
-                    <div class="input-wrapper">
-
-                        <span class="input-icon">↗</span>
-
-                        <input
-                            type="text"
-                            id="urlInput"
-                            name="url"
-                            placeholder="https://example.com"
-                            autocomplete="url"
-                            required
-                        >
-
-                    </div>
-
-                    <button type="submit" class="scan-button" id="scanBtn">
-                        <span>Analyze URL</span>
-                        <span>→</span>
-                    </button>
-
-                </form>
-
-
-                <div
-                    class="result-container"
-                    id="resultContainer"
-                    aria-live="polite"
-                ></div>
-
-
-                <div class="scanner-disclaimer">
-                    <span>ⓘ</span>
-                    <p>
-                        A scan result is an indication, not a guarantee
-                        that a website is safe. Avoid sharing sensitive
-                        information on unverified websites.
-                    </p>
+                <div class="risk-details">
+                    <h4 id="riskTitle">Analysis complete</h4>
+                    <p id="riskDescription">Risk analysis details will appear here.</p>
                 </div>
+            </div>
 
+            <div class="progress-track">
+                <div class="progress-fill" id="riskProgress"></div>
+            </div>
+
+            <div class="indicator-section">
+                <h4>Detected Indicators</h4>
+                <ul id="riskReasons"></ul>
+            </div>
+
+            <p class="result-note" id="resultNote">
+                This score is a heuristic estimate, not a verified
+                probability that a website is malicious.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- STATISTICS -->
+<section class="section stats-section" id="statistics">
+
+    <div class="section-heading centered">
+        <span class="eyebrow">SCAN OVERVIEW</span>
+        <h2>Your analysis at a glance.</h2>
+        <p>
+            View the distribution of URLs analyzed during this
+            browser session.
+        </p>
+    </div>
+
+    <div class="stats-panel">
+
+        <div class="stats-heading">
+            <h3>URL Scan Statistics</h3>
+            <span>● SESSION DATA</span>
+        </div>
+
+        <div class="stats-total">
+            <span>Total scans</span>
+            <strong id="totalScans">0</strong>
+        </div>
+
+        <div class="stats-chart">
+
+            <div class="stat-row">
+                <span>Low Risk</span>
+                <div class="stat-track">
+                    <div class="stat-fill safe-fill" id="safeBar"></div>
+                </div>
+                <strong id="safeCount">0</strong>
+            </div>
+
+            <div class="stat-row">
+                <span>Suspicious</span>
+                <div class="stat-track">
+                    <div class="stat-fill suspicious-fill" id="suspiciousBar"></div>
+                </div>
+                <strong id="suspiciousCount">0</strong>
+            </div>
+
+            <div class="stat-row">
+                <span>High Risk</span>
+                <div class="stat-track">
+                    <div class="stat-fill danger-fill" id="dangerBar"></div>
+                </div>
+                <strong id="dangerCount">0</strong>
             </div>
 
         </div>
 
-    </section>
+        <p class="stats-note">
+            Statistics are temporary and reset when the page is refreshed.
+            They represent this demo's heuristic classifications.
+        </p>
+
+    </div>
+</section>
 
 
-    <!-- CLOSING SECTION -->
-    <section class="closing-section">
+<!-- CLOSING CTA -->
+<section class="section closing-section">
 
-        <div class="closing-content">
+    <span class="eyebrow">YOUR SAFER DIGITAL JOURNEY STARTS HERE</span>
 
-            <span class="eyebrow">A SAFER DIGITAL HABIT</span>
+    <h2>
+        Stay informed.<br>
+        Stay protected.
+    </h2>
 
-            <h2>
-                Pause. Check.
-                <span>Then click.</span>
-            </h2>
+    <p>
+        A moment of checking can help prevent a costly mistake.
+    </p>
 
-            <p>
-                A little awareness can make a big difference.
-                Stay informed, recognize suspicious links and
-                protect your digital identity.
-            </p>
+    <a href="#scanner" class="primary-button">
+        Scan a URL Now ↗
+    </a>
 
-            <a href="#scanner" class="closing-button">
-                Check a suspicious link <span>↗</span>
-            </a>
-
-        </div>
+</section>
 
 
-        <div class="closing-decoration">
+<!-- FOOTER -->
+<footer class="footer">
 
-            <div class="shield-shape">✓</div>
-            <div class="shield-shadow"></div>
+    <a href="#home" class="logo footer-logo">
+        <span class="logo-icon">🛡</span>
+        PhishGuard
+    </a>
 
-        </div>
+    <p>Intelligent Phishing Detection & Digital Awareness</p>
 
-    </section>
+    <span>© 2026 PhishGuard. Academic Project.</span>
 
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <div class="footer-main">
-
-            <a href="#home" class="logo footer-logo">
-                <span class="logo-icon">P</span>
-                PhishGuard<span class="logo-dot">.</span>
-            </a>
-
-            <p>
-                Smarter awareness for a safer digital future.
-            </p>
-
-            <a href="#home" class="back-top">
-                Back to top ↑
-            </a>
-
-        </div>
+</footer>
 
 
-        <div class="footer-bottom">
-
-            <span>© 2026 PhishGuard. Educational project.</span>
-
-            <span>Stay aware. Stay protected.</span>
-
-        </div>
-
-    </footer>
-
-
-    <!-- FRAUD CARD AND MOBILE NAVIGATION JS -->
-    <script src="./fraud.js"></script>
-
-    <!-- URL SCANNER JS WILL BE CONNECTED SEPARATELY -->
+<script src="script.js"></script>
 
 </body>
 </html>
